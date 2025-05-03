@@ -76,8 +76,8 @@ Code Analysis
    .. code-block:: arduino
 
       void setup() {
-        pinMode(CLK, INPUT);
-        pinMode(DT, INPUT);
+        pinMode(CLK, INPUT_PULLUP);
+        pinMode(DT, INPUT_PULLUP);
         pinMode(SW, INPUT_PULLUP);
         Serial.begin(9600);
         lastStateCLK = digitalRead(CLK);
